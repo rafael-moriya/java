@@ -1,0 +1,63 @@
+	/* nome do programador:rafael moriya oliveira
+   data 20/02/2025
+   descriçao: media
+*/
+import javax.swing.JOptionPane;
+    
+public class java2 {
+    
+    public static void main(String[] args) {
+    double a,b,c,d,res;
+    
+    a = Double.parseDouble(JOptionPane.showInputDialog("digite o primiro nmr"));
+    b = Double.parseDouble(JOptionPane.showInputDialog("digite o segun do nmr"));
+    c = Double.parseDouble(JOptionPane.showInputDialog("digite o tercei do nmr"));
+    d  = Double.parseDouble(JOptionPane.showInputDialog("digite o quarto do nmr"));
+ 
+    res =(a + b + c + d)/4;
+            
+    if(res>= 6){
+        JOptionPane.showMessageDialog(null," aprovado com nota: "+ res); 
+    }
+    else if(res<= 3){
+        JOptionPane.showMessageDialog(null,"reprovado com nota: "+ res);
+    }
+    else {
+        JOptionPane.showMessageDialog(null,"recuperaçao P3, com nota: " + res);
+    }
+}
+}
+
+
+/* nome do programador:rafael moriya oliveira
+   data 20/02/2025
+   descriçao: subtraçao e sempre do maior pelo menor para n dar negativo
+*/
+package java1;
+
+import javax.swing.JOptionPane;
+
+
+public class Java1 {
+
+    public static void main(String[] args) {
+     double num, n, result;
+     
+     num = Double.parseDouble(JOptionPane.showInputDialog("digite o valor do primeiro numero "));
+     n = Double.parseDouble(JOptionPane.showInputDialog("digite o valor do segundo numero"));
+     if (num > n ){
+        result = (num-n);          
+         JOptionPane.showMessageDialog(null,"a subtraçao é:" + result ); 
+     }    
+     else if (n>num){
+             result = (n-num);
+             JOptionPane.showMessageDialog(null,"a subtraçao é:" +result);
+         }
+     else {
+          JOptionPane.showMessageDialog(null,"a subtraçao é: 0");
+             
+             }
+    }
+        
+}
+
