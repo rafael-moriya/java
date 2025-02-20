@@ -61,3 +61,32 @@ public class Java1 {
         
 }
 
+baskara package javaapplication1;
+
+import javax.swing.JOptionPane;
+
+public class JavaApplication1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+     
+
+            
+            double a,b,c,d,res, delta1, delta;
+
+            a = Double.parseDouble(JOptionPane.showInputDialog("digite o primiro nmr"));
+            b = Double.parseDouble(JOptionPane.showInputDialog("digite o segun do nmr"));
+            c = Double.parseDouble(JOptionPane.showInputDialog("digite o tercei do nmr"));
+
+            d = Math.pow(-b,2);
+            delta = (d-(4*a*c));
+            res = (-d+ Math.sqrt(d))/(2*a);
+             delta1 = (-d-Math.sqrt(d))/(2*a);
+             
+            JOptionPane.showMessageDialog(null,"recuperaçao P3, com nota: " + res);
+            JOptionPane.showMessageDialog(null,"recuperaçao P3, com nota: " + delta1);
+        }        
+   }
+    
